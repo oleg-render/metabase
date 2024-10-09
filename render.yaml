@@ -5,6 +5,7 @@ services:
     repo: https://github.com/render-examples/metabase.git # optional
     plan: standard # ensure that metabase has at least 2GB of RAM (defaults to starter)
     autoDeploy: false
+    region: ohio
     envVars:
       - key: MB_DB_CONNECTION_URI
         fromDatabase:
@@ -14,3 +15,4 @@ databases:
   - name: elephant
     databaseName: metabasedb
     ipAllowList: [] # only allow internal connections
+    region: ohio
